@@ -1,124 +1,52 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Donate</title>
         <meta charset="UTF-8">
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="shortcut icon" href="img/logoST.jpg" />
+
+        <link rel="stylesheet" type="text/css" href="css/donate/donate.css">
+        <link rel="stylesheet" type="text/css" href="css/donate/resp-donate.css">
         
         <link rel="stylesheet" type="text/css" href="css/menu.css">
 		<link rel="stylesheet" type="text/css" href="css/links.css">
 		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
-        <link rel="stylesheet" type="text/css" href="https://sibmo.ir/css/alertstyle.css">
 
-
-        
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="https://sibmo.ir/js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/hiden.js"></script>
     </head>
-
-    <body> <!-- onresize="Resize()" -->
-        <!-- <div id="hadafx" style="width:100%; max-width: 700; position:absolute; left:0px; right:0px; margin:auto;">
-            <div id="hadafxx" style="float: right; background-color: rgba(0,0,0,0.6); border-radius: 25px; min-height: 50px; width:94%; color: #fff; padding: 5px; box-shadow:0px 4px 15px rgba(0,0,0,0.6); position:absolute; left:0px; right:0px; margin:auto; top:2px; padding-bottom: 2px; padding-top: 3px;">
-                <div style="text-align:center; font-size:35px; text-shadow:0px 0px 15px rgba(0,0,0,1), 0px 2px 3px rgba(0,0,0,1);">Purpose: New PC</div>
-                <div style="overflow: hidden; border-top-right-radius: 50px; border-top-left-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; height:47px; width: 98%; left:0px; right:0px; margin:auto; /* background-color: #383838; */ border: 2px rgba(255,255,255,0.24) solid; min-width: 50px;">
-                    <div id="percentbar" style="min-width: 0%; transition: all .8s; height: 100%; border-top-right-radius: 50px; border-top-left-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; background-color: #ff0000; display:inline-block;">
-                        <div style="font-size: 36px; text-align:left; padding-left:15px; padding-right: 15px; color: #fff; line-height:53px;" id="hadafvalueid">0%</div>
-                    </div>
+    <body>
+        <header class="header">
+            <div class="fullpageMenu" id="nav">
+                <div class="banner">
+                    <!-- <img src="img/banner-mn.jpg"> -->
                 </div>
-                <div style="text-align:center; padding-top:10px; font-size:25px; opacity: 0.7; text-shadow:0px 0px 5px rgb(0, 0, 0), 0px 2px 3px rgb(0, 0, 0);">0 از 8,000,000 تومان (0%)</div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="/" data-text="Home">Home</a></li>
+                        <li><a href="bots.html" data-text="Bots">Bots</a></li>
+                        <li><a href="about.html" data-text="About">About</a></li>
+                        <li><a href="bots-fa.html" data-text="Persian">Persian</a></li>
+                    </ul>
+                </div>
             </div>
-        </div> -->
+            <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+            <div class="tit-SB">
+                <h1 class="tit-SB-h1">Studio <b>Bahram</b> / Bots</h1>
+            </div>
+        </header>
+        <div class="mars-div">
 
-        <script type="text/javascript">
-        var hadafvalue = 0;
-        var hadafvaluex = 0;
-        
-        function animateValue(id, start, end, duration) {
-            var obj = document.getElementById(id);
-            var range = end - start;
-            var minTimer = 50;
-            var stepTime = Math.abs(Math.floor(duration / range));
-
-            stepTime = Math.max(stepTime, minTimer);
-            var startTime = new Date().getTime();
-            var endTime = startTime + duration;
-            var timer;
-            
-            function run() {
-                var now = new Date().getTime();
-                var remaining = Math.max((endTime - now) / duration, 0);
-                var value = Math.round(end - (remaining * range));
-                obj.innerHTML = value+'%';
-                if (value == end) {
-                    clearInterval(timer);
-                    }
-                }
-                timer = setInterval(run, stepTime);
-                run();
-            }
-            function loop(){
-                try{
-                    $.ajax({
-                        url: "oajaxxxx.php?", 
-                        data: {
-                            payurl: "i007c",
-                            pcode: 2,
-                            xsecurity: "9fa2537333bb1d8"
-                        },
-                        type: 'post',
-                        success: function(data){
-                            jsondata=JSON.parse(data);
-                            if (jsondata.data.ok == 1) {
-                                $("#hadafx").html(jsondata.data.body);
-                                animateValue("hadafvalueid", hadafvaluex, jsondata.data.hadafvv, 520);
-                                $("#percentbar").css('min-width',hadafvalue+'%');
-                                setTimeout(function () {
-                                    $("#percentbar").css('min-width',jsondata.data.hadafv+'%');
-                                    hadafvalue =  jsondata.data.hadafv;
-                                    hadafvaluex =  jsondata.data.hadafvv;
-                                }, 20);											
-                                setTimeout(function () {
-                                    loop();
-                                }, 6780);
-                                Resize();
-                            }else{
-                                setTimeout(function () {
-                                    loop();
-                                }, 6780);
-                            }
-                        },
-                        error: function(XMLHttpRequest, textStatus, errorThrown){
-                            setTimeout(function () {
-                                loop();
-                            }, 6780);
-                        },
-                        timeout: 10000
-                    });
-                }
-                catch(err){
-                    setTimeout(function () {
-                        loop();
-                    }, 1500);
-                }
-            }
-            function Resize(){
-                if (((document.getElementById("hadafxx").clientWidth)/  (document.getElementById("hadafxx").clientHeight+10))>(document.body.clientWidth/  document.body.clientHeight)) {
-                    document.getElementById("hadafx").style.transform="translateX(0%) translateY(0%) scale("+(document.body.clientWidth/  (document.getElementById("hadafxx").clientWidth+50))+")";
-                }else{
-                    document.getElementById("hadafx").style.transform="translateX(0%) translateY(0%) scale("+(document.body.clientHeight/  (document.getElementById("hadafxx").clientHeight+30))+")";
-                }
-            }
-            $(document).ready(function(){
-                setTimeout(function () {
-                    loop();
-                }, 6780);
-                setTimeout(function () {
-                    Resize();
-                }, 8000);
-                Resize();
-            });
-        </script>
-	</body>
+        </div>
+        <div class="fotor-end">
+                <div class="fotor-end-logo"></div>
+                <h1 class="fotor-end-text">Please Follow Us Online & Introduce To Your Friends</h1>
+                <h1 class="fotor-end-studio-bahram">Studio Bahram</h1>
+                <a id="github" class="link github" href="https://github.com/Studio-Bahram">Github</a>
+                <a id="telegram" class="link telegram" href="https://T.me/Studio_Bahram">Telegram</a>
+                <a id="discord" class="link discord" href="https://discord.gg/Kmy258R">Discord</a>
+                <a id="instagram" class="link instagram" href="https://instagram.com/Studio_Bahram.ir">Instagram</a>
+        </div>
+    </body>
 </html>
