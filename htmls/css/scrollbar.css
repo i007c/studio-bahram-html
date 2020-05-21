@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #211d24; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(250, 0, 0, 0.8); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #f4423f;
+}

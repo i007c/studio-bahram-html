@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Studio Bharam</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logoST.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="css/Home/home.css">
+		<link rel="stylesheet" type="text/css" href="css/Home/resp-home.css">
+
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/links.css">
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="fullpageMenu" id="nav">
+					<div class="banner">
+						<img src="img/banner-mn.jpg">
+					</div>
+					<div class="nav">
+						<ul>
+							<li><a href="/" data-text="Home">Home</a></li>
+							<li><a href="bots.html" data-text="Bots">Bots</a></li>
+							<li><a href="about.html" data-text="About">About</a></li>
+							<li><a href="index-fa.html" data-text="Persian">Persian</a></li>
+						</ul>
+					</div>
+				</div>
+				<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+				<script type="text/javascript">
+					function menuToggle() {
+						var nav = document.getElementById('nav');
+						nav.classList.toggle("active");
+						var toggle = document.getElementById('toggle');
+						toggle.classList.toggle("active");
+						var mars = document.getElementById('mars');
+						mars.classList.toggle("active");
+						var github = document.getElementById('github');
+						github.classList.toggle("active");
+						var telegram = document.getElementById('telegram');
+						telegram.classList.toggle("active");
+						var discord = document.getElementById('discord');
+						discord.classList.toggle("active");
+						var instagram = document.getElementById('instagram');
+						instagram.classList.toggle("active");
+						
+					}
+				</script>
+				<div class="tit-SB">
+					<h1 class="tit-SB-h1">Studio <b>Bahram</b></h1>
+				</div>
+				<div class="slogan">
+					<h1 class="slogan-h1">Think and Make</h1>
+				</div>
+			</header>
+			<div class="about-us">
+				<p class="title-about-us">About Us</p>
+				<p class="paragraph-about-us">We build to Provide Comfort <br />
+				Studio Bahram is working in Bots & Programs & Scripts </p>
+			</div>
+			<div class="our-projects">
+				<p class="title-our-projects">Our Projects</p>
+				<p class="paragraph-our-projects">
+				Our Projects are written in Python & UPloaded TO The GitHub & Telegram</p>
+				<div class="Snack-img-1"></div>
+				<div class="Snack-img-2"></div>
+			</div>
+			<div class="fspase-1"></div>
+			<div class="bots-projects">
+				<p class="title-bots-projects">Bots</p>
+				<p class="paragraph-bots-projects">Mars<br />
+				Discord Bot Music Player & Radio <br />
+				Notice Mars is Under Construction & has Not yet been Completed <br />
+				<a href="https://discordapp.com/api/oauth2/authorize?client_id=686200449036058625&permissions=8&scope=bot" id="mars" class="link mars">Mars</a></p>
+				<div class="Mars-img-1"></div>
+				<div class="Mars-img-2"></div>
+				<div class="Mars-img-3"></div>
+			</div>
+			<div class="fspase-2"></div>
+			<div class="fotor-end">
+				<div class="fotor-end-logo"></div>
+				<h1 class="fotor-end-text">Please Follow Us Online & Introduce To Your Friends</h1>
+				<h1 class="fotor-end-studio-bahram">Studio Bahram</h1>
+				<a id="github" class="link github" href="https://github.com/Studio-Bahram">Github</a>
+				<a id="telegram" class="link telegram" href="https://T.me/Studio_Bahram">Telegram</a>
+				<a id="discord" class="link discord" href="https://discord.gg/Kmy258R">Discord</a>
+				<a id="instagram" class="link instagram" href="https://instagram.com/Studio_Bahram.ir">Instagram</a>
+			</div>
+		</div>
+	</body>
+</html>

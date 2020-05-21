@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>استودیو بهرام / درباره ما</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logoST.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="css/About/about-fa.css">
+		<link rel="stylesheet" type="text/css" href="css/About/resp-about.css">
+
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="fullpageMenu" id="nav">
+				<div class="banner">
+					<img src="img/banner-mn.jpg">
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="index-fa.html" data-text="خانه">خانه</a></li>
+						<li><a href="bots-fa.html" data-text="ربات ها">ربات ها</a></li>
+						<li><a href="about-fa.html" data-text="درباره ما">درباره ما</a></li>
+						<li><a href="about.html" data-text="انگلیسی">انگلیسی</a></li>
+					</ul>
+				</div>
+			</div>
+				<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+				<script type="text/javascript">
+					function menuToggle() {
+						var nav = document.getElementById('nav');
+						nav.classList.toggle("active");
+						var toggle = document.getElementById('toggle');
+						toggle.classList.toggle("active");
+						var mars = document.getElementById('mars');
+						mars.classList.toggle("active");
+						var github = document.getElementById('github');
+						github.classList.toggle("active");
+						var telegram = document.getElementById('telegram');
+						telegram.classList.toggle("active");
+						var discord = document.getElementById('discord');
+						discord.classList.toggle("active");
+						var instagram = document.getElementById('instagram');
+						instagram.classList.toggle("active");
+					}
+				</script>
+			<div class="slogan">
+			<h1 class="slogan-h1">استودیو بهرام / درباره ما</h1>
+			</div>
+		</header>
+		<div class="about-us-all">
+			<p class="about-us-title">درباره <b>ما</b></p>
+			<p class="about-us-pra">استودیو بهرام در تاریخ ششم فروردین سال 1399 شروع به کار کرد<br />
+	در  <b>استودیو بهرام</b> بر روی سایت ها ، برنامه ها ، اسکریپت ها و ربات ها کار می شوند<br />در استودیو بهرام سعی ما بر این است که رضایت کامل کاربر را دریافت کنیم و هر روز سعی بر این داریم تا کار خود را بهتر کنیم</p>
+			
+		</div>
+		<div class="contact-us-all">
+			<p class="contact-us-title"> ارتباط با<b>ما</b></p>
+			<p class="contact-us-pra">لطفا برای حمایت از ما ، مارا در شبکه های اجتماعی دنبال کنید و همچنین ما را به دوستان خود معرفی کنید</p>
+			<a id="github" class="link github" href="https://github.com/Studio-Bahram">گیت هاب</a>
+			<a id="telegram" class="link telegram" href="https://T.me/Studio_Bahram">تلگرام</a>
+			<a id="mars" class="link mars" href="index-fa.html" >خانه</a>
+			<a id="discord" class="link discord" href="https://discord.gg/Kmy258R">دیسکورد</a>
+			<a id="instagram" class="link instagram" href="https://instagram.com/Studio_Bahram.ir">اینستاگرام</a>
+		</div>
+	</body>
+</html>

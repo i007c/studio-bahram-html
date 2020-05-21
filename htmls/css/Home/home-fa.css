@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Scheherazade&display=swap');
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #211d24;
+}
+
+body {
+	font-family: 'Scheherazade', serif;
+	font-weight: lighter;
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	margin-top: 0;
+	margin-bottom: 0;
+	top: 0;
+	background: url(../../img/logo-hed.png);
+	background-size: cover;
+	border-top: 0.09px solid rgba(254, 202, 102);
+	align-items: center;
+}
+.tit-SB {
+	text-align: center;
+	padding: 0;
+	width: 240px;
+	height: 65px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 250px auto 0 auto;
+	border-radius: 20px;
+}
+.tit-SB-h1 {
+	width: 240px;
+	font-family: 'Scheherazade', serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 3em;
+}
+.slogan {
+	text-align: center;
+	padding: 0;
+	width: 200px;
+	height: 47px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 30px auto 0 auto;
+}
+.slogan-h1 {
+	width: 200px;
+	font-family: 'Scheherazade', serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.fspase-1 {
+	width: 100%;
+	height: 80vh;
+	margin: 0;
+	border-top: 0.9px solid #211d24;
+	background-color: #211d24;
+	text-align: center;
+}
+.fspase-2 {
+	width: 100%;
+	height: 50vh;
+	margin: 0;
+	border-top: 0.9px solid #211d24;
+	background-color: #211d24;
+	text-align: center;
+}
+.about-us {
+	width: 100%;
+	height: 80vh;
+	margin: 0;
+	border-top: 0.9px solid #211d24;
+	background-color: #211d24;
+	text-align: center;
+}
+
+.title-about-us {
+	margin-top: 150px;
+	color: #FF0000;
+	font-size: 50px;
+}
+
+.paragraph-about-us {
+	color: #fff;
+	font-size: 30px;
+}
+.our-projects {
+	width: 100%;
+	height: 80vh;
+	margin: 0;
+	border-top: 0.9px solid #f4423f;
+	background-color: #f4423f;
+	text-align: center;
+}
+
+.title-our-projects {
+	margin: 70px auto 20px auto;
+	color: #211d24;
+	font-size: 50px;
+}
+
+.paragraph-our-projects {
+	margin: 10px auto 40px auto;
+	color: #fff;
+	font-size: 30px;
+}
+.Snack-img-1 {
+	width: 500px;
+	height: 500px;
+	display: inline-block;
+	background: url(../../img/logo-snack1.png);
+	background-size: cover;
+}
+.Snack-img-2 {
+	width: 500px;
+	height: 500px;
+	display: inline-block;
+	background: url(../../img/logo-snack4.png);
+	background-size: cover;
+}
+.bots-projects {
+	width: 100%;
+	height: 400px;
+	margin: 0;
+	border-top: 0.9px solid #f4423f;
+	background-color: #f4423f;
+	text-align: center;
+}
+
+.title-bots-projects {
+	margin-top: 40px;
+	color: #211d24;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.paragraph-bots-projects {
+	margin-top: 0;
+	color: #fff;
+	font-size: 30px;
+}
+
+.Mars-img-1 {
+	width: 370px;
+	height: 140px;
+	display: inline-block;
+	background: url(../../img/Mars-1.png);
+}
+.Mars-img-2 {
+	width: 370px;
+	height: 140px;
+	display: inline-block;
+	background: url(../../img/Mars-2.png);
+
+}
+.Mars-img-3 {
+	width: 370px;
+	height: 140px;
+	display: inline-block;
+	background: url(../../img/Mars-3.png);
+}
+
+.fotor-end {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	align-items: center;
+}
+
+.fotor-end-logo {
+	margin: 50px auto 0 auto;
+	background: url(../../img/logoST.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	border-radius: 50px;
+}
+
+.fotor-end-text {
+	color: #fff;
+}
+.fotor-end-studio-bahram {
+	color: #fa946c;
+	cursor: none;
+}

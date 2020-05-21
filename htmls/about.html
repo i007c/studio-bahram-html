@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Studio Bahram / About</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logoST.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="css/About/about.css">
+		<link rel="stylesheet" type="text/css" href="css/About/resp-about.css">
+
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="fullpageMenu" id="nav">
+				<div class="banner">
+					<img src="img/banner-mn.jpg">
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/" data-text="Home">Home</a></li>
+						<li><a href="bots.html" data-text="Bots">Bots</a></li>
+						<li><a href="about.html" data-text="About">About</a></li>
+						<li><a href="about-fa.html" data-text="Persian">Persian</a></li>
+					</ul>
+				</div>
+			</div>
+				<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+				<script type="text/javascript">
+					function menuToggle() {
+						var nav = document.getElementById('nav');
+						nav.classList.toggle("active");
+						var toggle = document.getElementById('toggle');
+						toggle.classList.toggle("active");
+						var mars = document.getElementById('mars');
+						mars.classList.toggle("active");
+						var github = document.getElementById('github');
+						github.classList.toggle("active");
+						var telegram = document.getElementById('telegram');
+						telegram.classList.toggle("active");
+						var discord = document.getElementById('discord');
+						discord.classList.toggle("active");
+						var instagram = document.getElementById('instagram');
+						instagram.classList.toggle("active");
+					}
+				</script>
+			<div class="slogan">
+			<h1 class="slogan-h1">Studio Bahram / About</h1>
+			</div>
+		</header>
+		<div class="about-us-all">
+			<p class="about-us-title">About <b>Us</b></p>
+			<p class="about-us-pra">Studio Bahram has Started 2020 - 3 - 25 since <br />
+	At <b>Bahram Studios</b> we Continue to Work in The areas OF WebSite, Programs<br />Bot Building FOR Social NetWorKing & Script Writing has been & will Continue TO Work</p>
+			
+		</div>
+		<div class="contact-us-all">
+			<p class="contact-us-title">ContacT <b>Us</b></p>
+			<p class="contact-us-pra">Please Follow Studio Bahram TO Find OUT About OUR Latest WorK <br />
+			You CaN also SuPPort<b> Us</b> by introducing <b>Us</b> TO Your Friends</p>
+			<a id="github" class="link github" href="https://github.com/Studio-Bahram">Github</a>
+			<a id="telegram" class="link telegram" href="https://T.me/Studio_Bahram">Telegram</a>
+			<a id="mars" class="link mars" href="/" >Home</a>
+			<a id="discord" class="link discord" href="https://discord.gg/Kmy258R">Discord</a>
+			<a id="instagram" class="link instagram" href="https://instagram.com/Studio_Bahram.ir">Instagram</a>
+		</div>
+	</body>
+</html>

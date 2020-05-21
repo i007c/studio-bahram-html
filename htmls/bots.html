@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Studio Bahram / Bots</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logoST.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="css/Bots/bots.css">
+		<link rel="stylesheet" type="text/css" href="css/Bots/resp-bots.css">
+
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/links.css">
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="fullpageMenu" id="nav">
+				<div class="banner">
+					<img src="img/banner-mn.jpg">
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/" data-text="Home">Home</a></li>
+						<li><a href="bots.html" data-text="Bots">Bots</a></li>
+						<li><a href="about.html" data-text="About">About</a></li>
+						<li><a href="bots-fa.html" data-text="Persian">Persian</a></li>
+					</ul>
+				</div>
+			</div>
+			<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+			<script type="text/javascript">
+				function menuToggle() {
+					var nav = document.getElementById('nav');
+					nav.classList.toggle("active");
+					var toggle = document.getElementById('toggle');
+					toggle.classList.toggle("active");
+					var mars = document.getElementById('mars');
+					mars.classList.toggle("active");
+					var github = document.getElementById('github');
+					github.classList.toggle("active");
+					var telegram = document.getElementById('telegram');
+					telegram.classList.toggle("active");
+					var discord = document.getElementById('discord');
+					discord.classList.toggle("active");
+					var instagram = document.getElementById('instagram');
+					instagram.classList.toggle("active");
+				}
+			</script>
+			<div class="tit-SB">
+				<h1 class="tit-SB-h1">Studio <b>Bahram</b> / Bots</h1>
+			</div>
+		</header>
+		<div class="mars-div">
+			<h1>Mars</h1>
+			<p>Mars is a Music & Radio broadcast Bot Written FOR Discord <br>
+			Mars is Written in The Language OF Python <br>
+			Mars has not yet reached The Stage OF Music broadcasting & is Under Construction <br>
+			You Can add it TO Your Server on Discord by Following The Link below</p>
+			<a href="https://discordapp.com/api/oauth2/authorize?client_id=686200449036058625&permissions=8&scope=bot" id="mars" class="link mars">Mars</a><br>
+			<div class="Mars-img-1"></div>
+			<div class="Mars-img-2"></div>
+			<div class="Mars-img-3"></div>
+		</div>
+		<div class="fotor-end">
+				<div class="fotor-end-logo"></div>
+				<h1 class="fotor-end-text">Please Follow Us Online & Introduce To Your Friends</h1>
+				<h1 class="fotor-end-studio-bahram">Studio Bahram</h1>
+				<a id="github" class="link github" href="https://github.com/Studio-Bahram">Github</a>
+				<a id="telegram" class="link telegram" href="https://T.me/Studio_Bahram">Telegram</a>
+				<a id="discord" class="link discord" href="https://discord.gg/Kmy258R">Discord</a>
+				<a id="instagram" class="link instagram" href="https://instagram.com/Studio_Bahram.ir">Instagram</a>
+			</div>
+	</body>
+</html>

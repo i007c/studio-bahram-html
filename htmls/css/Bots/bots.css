@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #211d24;
+}
+
+body {
+	font-family: "Ubuntu",sans-serif;
+	font-weight: lighter;
+}
+
+.header {
+	width: 100%;
+	height: 100vh;
+	margin-top: 0;
+	margin-bottom: 0;
+	top: 0;
+	background: url(../../img/bot-logo.jpg);
+	background-size: cover;
+	border-top: 0.09px solid rgba(254, 202, 102);
+	align-items: center;
+}
+.tit-SB {
+	text-align: center;
+	padding: 0;
+	width: 460px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 250px auto 0 auto;
+	border-radius: 4px;
+}
+.tit-SB-h1 {
+	font-family: "Ubuntu Mono",sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 2.5em;
+}
+.mars-div {
+	width: 100%;
+	height: 100vh;
+	text-align:center;
+	align-items: center;
+}
+.mars-div h1 {
+	margin-top: 20vh;
+	color: #f69874;
+	font-size: 4em;
+}
+.mars-div p {
+	color: #fff;
+	font-size: 1.6em;
+	margin: 10px auto 20px auto;
+}
+.Mars-img-1 {
+	width: 370px;
+	height: 140px;
+	display: inline-block;
+	background: url(../../img/Mars-1.png);
+}
+.Mars-img-2 {
+	width: 370px;
+	height: 140px;
+	display: inline-block;
+	background: url(../../img/Mars-2.png);
+
+}
+.Mars-img-3 {
+	width: 370px;
+	height: 140px;
+	display: inline-block;
+	background: url(../../img/Mars-3.png);
+}
+.fotor-end {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	align-items: center;
+}
+
+.fotor-end-logo {
+	margin: 50px auto 0 auto;
+	background: url(../../img/logoST.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+	border-radius: 50px;
+}
+
+.fotor-end-text {
+	color: #fff;
+}
+.fotor-end-studio-bahram {
+	color: #fa946c;
+	cursor: none;
+}

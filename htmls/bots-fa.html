@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>استودیو بهرام / ربات ها</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/logoST.jpg" />
+
+		<link rel="stylesheet" type="text/css" href="css/Bots/bots-fa.css">
+		<link rel="stylesheet" type="text/css" href="css/Bots/resp-bots.css">
+
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/links.css">
+		<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="fullpageMenu" id="nav">
+				<div class="banner">
+					<img src="img/banner-mn.jpg">
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="index-fa.html" data-text="خانه">خانه</a></li>
+						<li><a href="bots-fa.html" data-text="ربات ها">ربات ها</a></li>
+						<li><a href="about-fa.html" data-text="درباره ما">درباره ما</a></li>
+						<li><a href="bots.html" data-text="انگلیسی">انگلیسی</a></li>
+					</ul>
+				</div>
+			</div>
+			<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+			<script type="text/javascript">
+				function menuToggle() {
+					var nav = document.getElementById('nav');
+					nav.classList.toggle("active");
+					var toggle = document.getElementById('toggle');
+					toggle.classList.toggle("active");
+					var mars = document.getElementById('mars');
+					mars.classList.toggle("active");
+					var github = document.getElementById('github');
+					github.classList.toggle("active");
+					var telegram = document.getElementById('telegram');
+					telegram.classList.toggle("active");
+					var discord = document.getElementById('discord');
+					discord.classList.toggle("active");
+					var instagram = document.getElementById('instagram');
+					instagram.classList.toggle("active");
+				}
+			</script>
+			<div class="tit-SB">
+				<h1 class="tit-SB-h1">استودیو بهرام / ربات ها</h1>
+			</div>
+		</header>
+		<div class="mars-div">
+			<h1>مارس</h1>
+			<p>مارس یک ربات موسیقی پلیر است که برای دیسکورد نوشته شده است<br>
+			همچنین مارس با زبان پایتون نوشته شده است <br>
+			توجه ! ربات مارس هنوز تکمیل نشده است و در دست ساخت می باشد <br />
+			شما می توانید نسخه بتا مارس را از لینک زیر به سرور خود اضافه کنید
+			<br /></p>
+			<a href="https://discordapp.com/api/oauth2/authorize?client_id=686200449036058625&permissions=8&scope=bot" id="mars" class="link mars">Mars</a><br>
+			<div class="Mars-img-1"></div>
+			<div class="Mars-img-2"></div>
+			<div class="Mars-img-3"></div>
+		</div>
+		<div class="fotor-end">
+				<div class="fotor-end-logo"></div>
+				<h1 class="fotor-end-text">لطفا برای حمایت از ما ، مارا در شبکه های اجتماعی دنبال کنید و همچنین ما را به دوستان خود معرفی کنید</h1>
+				<h1 class="fotor-end-studio-bahram">استودیو بهرام</h1>
+				<a id="github" class="link github" href="https://github.com/Studio-Bahram">گیت هاب</a>
+				<a id="telegram" class="link telegram" href="https://T.me/Studio_Bahram">تلگرام</a>
+				<a id="discord" class="link discord" href="https://discord.gg/Kmy258R">دیسکورد</a>
+				<a id="instagram" class="link instagram" href="https://instagram.com/Studio_Bahram.ir">اینستاگرام</a>
+		</div>
+	</body>
+</html>

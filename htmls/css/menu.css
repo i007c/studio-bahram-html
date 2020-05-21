@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Ubuntu",sans-serif;
+	font-weight: lighter;
+}
+
+body {
+	min-height: 100vh;
+}
+.fullpageMenu {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+	transition: 0.5s;
+}
+.fullpageMenu.active {
+	top: 0;
+}
+.fullpageMenu .banner {
+	position: relative;
+	min-width: 600px;
+	height: 100%;
+}
+.fullpageMenu .banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.fullpageMenu .nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+.fullpageMenu .nav ul {
+	position: relative;
+}
+.fullpageMenu .nav ul li {
+	position: relative;
+	list-style: none;
+	padding: 0 20px;
+	margin: 5px 0;
+	overflow: hidden;
+	display: table;
+}
+.fullpageMenu .nav ul li:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ff0047;
+	transition: transform 0.5s ease-in-out;
+	transform: scaleY(0);
+	transform-origin: bottom;
+}
+.fullpageMenu .nav ul li:hover:before {
+	transition: transform 0.5s ease-in-out;
+	transform: scaleY(1);
+	transform-origin: top;
+}
+.fullpageMenu .nav ul li a {
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-size: 4em;
+	font-weight: 700;
+	line-height: 1em;
+	padding-top: 12px;
+	display: inline-block;
+	text-transform: uppercase;
+	transition: 0.5s ease-in-out;
+}
+.fullpageMenu .nav ul li a:before {
+	content: attr(data-text);
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	color: #fff;
+}
+.fullpageMenu .nav ul li:hover a {
+	transform: translateY(-100%);
+	clear: #fff;
+}
+.menuicon {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	background: #fec97c url(../img/menub-log.png);
+	background-size: 40px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+.menuicon.active {
+	background: #fec97c url(../img/Close-icon.png);
+	background-size: 40px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+@media(max-width: 1140px)
+{
+	.banner {
+		display: none;
+	}
+}
+@media(max-width: 1140px) and (max-height: 500px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 3em;
+	}
+	.menuicon {
+		top: 15px;
+		right: 15px;
+		width: 50px;
+		height: 50px;
+		background-size: 30px;
+	}
+	.menuicon.active {
+		background-size: 30px;
+	}
+}
+@media(max-width: 1140px) and (max-height: 360px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 2em;
+	}	
+}
+@media(max-width: 1140px) and (max-height: 265px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 1em;
+	}
+	.menuicon {
+		top: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		background-size: 20px;
+	}
+	.menuicon.active {
+		background-size: 20px;
+	}
+}
+@media(max-width: 600px)
+{
+	.banner {
+		display: none;
+	}
+	.menuicon {
+		top: 15px;
+		right: 15px;
+		width: 50px;
+		height: 50px;
+		background-size: 30px;
+	}
+	.menuicon.active {
+		background-size: 30px;
+	}
+}
+@media(max-width: 850px) and (max-height: 400px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 1em;
+	}
+	.menuicon {
+		top: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		background-size: 20px;
+	}
+	.menuicon.active {
+		background-size: 20px;
+	}
+}
+@media(max-width: 700px) and (max-height: 400px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 2em;
+	}	
+}
+@media(max-width: 500px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 3em;
+	}
+}
+
+@media(max-width: 400px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 2em;
+	}
+	.menuicon {
+		top: 10px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+		background-size: 20px;
+	}
+	.menuicon.active {
+		background-size: 20px;
+	}
+}
+
+@media(max-width: 250px)
+{
+	.banner {
+		display: none;
+	}
+	.fullpageMenu .nav ul li a {
+		font-size: 1.4em;
+	}
+}
