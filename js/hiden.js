@@ -13,4 +13,6 @@ function menuToggle() {
     discord.classList.toggle("active");
     var instagram = document.getElementById('instagram');
     instagram.classList.toggle("active");
+    var donate = document.getElementById('donate');
+    donate.classList.toggle("active");
 }
