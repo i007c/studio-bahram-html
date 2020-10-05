@@ -205,6 +205,4 @@ Procfile    text
 *.wwaproj   merge=binary
 
 ## Language
-*.html linguist-language=HTML
-*.css linguist-language=CSS
-*.js linguist-language=JavaScript
+* linguist-language=HTML
