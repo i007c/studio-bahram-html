@@ -205,4 +205,4 @@ Procfile    text
 *.wwaproj   merge=binary
 
 ## Language
-* linguist-language=Html
+* linguist-language=HTML
